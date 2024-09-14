@@ -19,13 +19,13 @@
 
 mkDerivation rec {
   pname = "vesc-tool";
-  version = "6.02";
+  version = "6.05";
 
   src = fetchFromGitHub {
     owner = "lukash";
     repo = "vesc_tool";
-    rev = "release_6_02.1";
-    sha256 = "Vo2TPtt094xhijW1k6eiO4+UWMxpROahv8O/FJ9W3as=";
+    rev = "release_6_05";
+    sha256 = "81oDTm2cV7DokXrotpQbdjgoobqO7FLrDdAqgrQenOQ=";
   };
 
   nativeBuildInputs = [
@@ -51,6 +51,6 @@ mkDerivation rec {
 
   installPhase = ''
     mkdir -p $out/bin
-    cp build/lin/vesc_tool_6.02 $out/bin/vesc_tool
+    cp build/lin/vesc_tool_6.05 $out/bin/vesc_tool
   '';
 }
